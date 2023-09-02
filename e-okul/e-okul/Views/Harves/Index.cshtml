@@ -1,0 +1,47 @@
+﻿@model IEnumerable<e_okul.Models.Harf>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+ 
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Harf1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Katsayi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ortalama)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Harf1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Katsayi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ortalama)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.HarfId">Güncelle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.HarfId">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.HarfId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,51 @@
+﻿@model e_okul.Models.Der
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Kayıt Silme Sayfası</h1>
+
+<h3>Kayıdı sileceksin emin misin?</h3>
+<div>
+    <h4>Der</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DersAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DersAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Akts)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Akts)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kredi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kredi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HaftalikSaati)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HaftalikSaati)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogretmen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogretmen.OgretmenId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DersId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+    </form>
+</div>

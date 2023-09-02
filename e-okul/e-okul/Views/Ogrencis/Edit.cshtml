@@ -1,0 +1,59 @@
+﻿@model e_okul.Models.Ogrenci
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Güncelleme</h1>
+
+<h4>Ogrenci</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OgrId" />
+            <div class="form-group">
+                <label asp-for="OgrNo" class="control-label"></label>
+                <input asp-for="OgrNo" class="form-control" />
+                <span asp-validation-for="OgrNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrAdi" class="control-label"></label>
+                <input asp-for="OgrAdi" class="form-control" />
+                <span asp-validation-for="OgrAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrSoyadi" class="control-label"></label>
+                <input asp-for="OgrSoyadi" class="form-control" />
+                <span asp-validation-for="OgrSoyadi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrMail" class="control-label"></label>
+                <input asp-for="OgrMail" class="form-control" />
+                <span asp-validation-for="OgrMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrBolumId" class="control-label"></label>
+                <select asp-for="OgrBolumId" class="form-control" asp-items="ViewBag.OgrBolumId"></select>
+                <span asp-validation-for="OgrBolumId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gno" class="control-label"></label>
+                <input asp-for="Gno" class="form-control" />
+                <span asp-validation-for="Gno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,63 @@
+﻿@model e_okul.Models.Notlar
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Kayıt Silme Sayfası</h1>
+
+<h3>Kayıdı sileceksin emin misin?</h3>
+<div>
+    <h4>Notlar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AraSinav)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AraSinav)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Final)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Final)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ortalama)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ortalama)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ders)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ders.DersId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Harf)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Harf.HarfId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogr.OgrId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogretmen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogretmen.OgretmenId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="NotId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+    </form>
+</div>

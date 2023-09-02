@@ -1,0 +1,71 @@
+﻿@model IEnumerable<e_okul.Models.Notlar>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+ 
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AraSinav)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Final)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ortalama)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ders)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Harf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogretmen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AraSinav)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Final)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ortalama)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ders.DersAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Harf.Harf1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ogr.OgrAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ogretmen.Adi)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.NotId">Güncelle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.NotId">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.NotId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

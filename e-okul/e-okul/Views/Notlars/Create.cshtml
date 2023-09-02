@@ -1,0 +1,59 @@
+﻿@model e_okul.Models.Notlar
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Ekleme sayfası</h1>
+
+<h4>Notlar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OgrId" class="control-label"></label>
+                <select asp-for="OgrId" class ="form-control" asp-items="ViewBag.OgrId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DersId" class="control-label"></label>
+                <select asp-for="DersId" class ="form-control" asp-items="ViewBag.DersId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgretmenId" class="control-label"></label>
+                <select asp-for="OgretmenId" class ="form-control" asp-items="ViewBag.OgretmenId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AraSinav" class="control-label"></label>
+                <input asp-for="AraSinav" class="form-control" />
+                <span asp-validation-for="AraSinav" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Final" class="control-label"></label>
+                <input asp-for="Final" class="form-control" />
+                <span asp-validation-for="Final" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ortalama" class="control-label"></label>
+                <input asp-for="Ortalama" class="form-control" />
+                <span asp-validation-for="Ortalama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HarfId" class="control-label"></label>
+                <select asp-for="HarfId" class ="form-control" asp-items="ViewBag.HarfId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<e_okul.Models.Der>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+ 
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DersAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Akts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kredi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HaftalikSaati)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogretmen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DersAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Akts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kredi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HaftalikSaati)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ogretmen.OgretmenId)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.DersId">Güncelle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.DersId">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.DersId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

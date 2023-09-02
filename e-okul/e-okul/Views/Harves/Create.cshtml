@@ -1,0 +1,43 @@
+﻿@model e_okul.Models.Harf
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Ekleme sayfası</h1>
+
+<h4>Harf</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Harf1" class="control-label"></label>
+                <input asp-for="Harf1" class="form-control" />
+                <span asp-validation-for="Harf1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Katsayi" class="control-label"></label>
+                <input asp-for="Katsayi" class="form-control" />
+                <span asp-validation-for="Katsayi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ortalama" class="control-label"></label>
+                <input asp-for="Ortalama" class="form-control" />
+                <span asp-validation-for="Ortalama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

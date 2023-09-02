@@ -1,0 +1,180 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = e_okul
+build_property.RootNamespace = e_okul
+build_property.ProjectDir = C:\Users\UMUT\Desktop\e-okul\e-okul\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\UMUT\Desktop\e-okul\e-okul
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Bolums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Bolums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Bolums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Bolums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Bolums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sdW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Donems/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uZW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Donems/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uZW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Donems/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uZW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Donems/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uZW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Donems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uZW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Harves/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFydmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Harves/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFydmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Harves/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFydmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Harves/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFydmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Harves/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFydmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Notlars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90bGFyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Notlars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90bGFyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Notlars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90bGFyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Notlars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90bGFyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Notlars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90bGFyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogrencis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogrencis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogrencis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogrencis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogrencis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogretmen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogretmen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogretmen/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogretmen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Ogretmen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/UMUT/Desktop/e-okul/e-okul/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-36l2r2kbmr

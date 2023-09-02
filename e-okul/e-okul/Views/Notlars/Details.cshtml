@@ -1,0 +1,60 @@
+﻿@model e_okul.Models.Notlar
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detay Sayfası</h1>
+
+<div>
+    <h4>Notlar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AraSinav)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AraSinav)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Final)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Final)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ortalama)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ortalama)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ders)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ders.DersId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Harf)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Harf.HarfId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogr.OgrId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogretmen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogretmen.OgretmenId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.NotId">Güncelle</a> |
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<e_okul.Models.Ogrenci>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+ 
+
+<p>
+    <a class ="btn btn-primary" asp-action="Create">Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Öğrenci No
+            </th>
+            <th>
+                Öğrenci Adı 
+            </th>
+            <th>
+                Öğrenci SoyAdı
+            </th>
+            <th>
+                Öğrenci Mail
+            </th>
+            <th>
+                GNO
+            </th>
+            <th>
+                Bolum
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrSoyadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrBolum.BolumAdi)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.OgrId">Güncelle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.OgrId">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.OgrId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<e_okul.Models.Donem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+ 
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DonemSayisi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopAkts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopDers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogr)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonemSayisi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopAkts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopDers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ogr.OgrId)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.DonemId">Düzenle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.DonemId">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.DonemId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

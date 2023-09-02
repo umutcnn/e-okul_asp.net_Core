@@ -1,0 +1,52 @@
+﻿@model e_okul.Models.Donem
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Ekleme sayfası</h1>
+
+<h4>Donem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OgrId" class="control-label"></label>
+                <select asp-for="OgrId" class ="form-control" asp-items="ViewBag.OgrId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DonemSayisi" class="control-label"></label>
+                <input asp-for="DonemSayisi" class="form-control" />
+                <span asp-validation-for="DonemSayisi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopAkts" class="control-label"></label>
+                <input asp-for="TopAkts" class="form-control" />
+                <span asp-validation-for="TopAkts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopDers" class="control-label"></label>
+                <input asp-for="TopDers" class="form-control" />
+                <span asp-validation-for="TopDers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dno" class="control-label"></label>
+                <input asp-for="Dno" class="form-control" />
+                <span asp-validation-for="Dno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

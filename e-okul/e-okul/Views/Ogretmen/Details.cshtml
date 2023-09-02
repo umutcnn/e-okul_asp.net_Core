@@ -1,0 +1,30 @@
+﻿@model e_okul.Models.Ogretman
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detay Sayfası</h1>
+
+<div>
+    <h4>Ogretman</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Soyadi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Soyadi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.OgretmenId">Güncelle</a> |
+    <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+</div>

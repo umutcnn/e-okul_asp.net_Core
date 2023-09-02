@@ -1,0 +1,51 @@
+﻿@model e_okul.Models.Donem
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Kayıt Silme Sayfası</h1>
+
+<h3>Kayıdı sileceksin emin misin?</h3>
+<div>
+    <h4>Donem</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonemSayisi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonemSayisi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TopAkts)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TopAkts)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TopDers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TopDers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogr.OgrId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DonemId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a asp-action="Index"class="btn btn-outline-info" >Geri Dön</a>
+    </form>
+</div>
